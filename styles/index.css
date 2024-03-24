@@ -14,7 +14,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
 }
 
 .header__menu ul {
@@ -25,6 +25,7 @@ header {
 .header__icons ul {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 .header__menu a {
@@ -34,7 +35,7 @@ header {
     font-weight: 500;
     line-height: 27px;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: left;  
 }
 
 .header__menu ul li,
