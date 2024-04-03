@@ -1,0 +1,16 @@
+// import libraries
+
+// import base styles
+@import 'base/_func';
+@import 'base/_mixins';
+@import 'base/_variables';
+
+// import static components
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/_main';
+// import dynamic components
+
+// import pages
+@import 'pages/page-about.scss';
+
