@@ -1,3 +1,88 @@
-.main{
+$mainColor: #C1DCDC;
+$colorTwo: #1E1E1E;
+$colorThree: #1E1E1EBF;
+$colorFour: #1E1E1E80;
+
+.main {
+    &__hero {
+        background-color: $mainColor;
+        height: 512px;
+        border-radius: 24px;
+        padding-left: 48px;
+
+        &__content {
+            h1 {
+                width: 512px;
+                color: #000;
+                font-family: Poppins;
+                font-size: 64px;
+                font-weight: 800;
+                line-height: 64px;
+                padding-bottom: 20px;
+            }
+
+            h3 {
+                color: var(--Color-2, #1E1E1E);
+                font-family: Poppins;
+                font-size: 32px;
+                font-weight: 500;
+            }
+
+            h4 {
+                color: var(--Color-2, #1E1E1E);
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        .btn {
+            background-color: $mainColor;
+            border-color: $mainColor;
+            border-radius: 12px;
+            width: 48px;
+            height: 48px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        ::placeholder {
+            color: $colorFour;
+            font-family: Poppins;
+            font-size: 18px;         
+            font-weight: 500;            
+        }
+    }
+
+    &__categories {
+        &__title{
+            h2 {
+                color: $colorTwo;
+                font-family: Poppins;
+                font-size: 32px;        
+                font-weight: 700;           
+            }
+            p {
+                color:$colorFour;
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;               
+            }
+        }     
+    }
     
+}
+
+.form-control-borderless {
+    border: none;
+
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+
 }
