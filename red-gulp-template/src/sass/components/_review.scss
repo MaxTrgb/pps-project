@@ -1,0 +1,47 @@
+.review{
+
+    h1{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        color: $Color-2;
+    }
+    
+    &__card{
+
+        background-color: $Color-1;
+        border-radius: 24px;
+        padding: 28px;
+        margin-bottom: 48px;
+        
+        &_reviewer{
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            color: $Color-2;
+        }
+
+        &_rating{
+            font-size: 20px;
+            color: $Color-4;
+            margin-bottom: .5em;
+
+            .active {
+                color: $Color-5;
+            }
+        }
+
+        &_description{
+            font-size: 16px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            color: $Color-3;
+
+        }
+
+    }
+}
