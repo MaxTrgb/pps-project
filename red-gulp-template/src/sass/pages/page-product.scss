@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.product {
+
+    nav {
+
+        li {
+            // color: $Color-3;
+            font-family: Poppins;
+            a{
+                text-decoration: none;
+                font-family: Poppins;
+                color: $Color-3;
+                &:hover{
+                    color: $Color-2;
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        margin-top: 48px;
+        background-color: $Color-1;
+        border-radius: 24px;
+        padding: 28px;
+        >img {
+            max-width: 358px;
+            min-width: 358px;
+            max-height: 358px;
+            min-height: 358px;
+        }
+
+        &_info {
+            margin-left: 48px;
+
+            >h1 {
+                color: $Color-2;
+
+                margin-top: 10px;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            &_stars {
+                font-size: 20px;
+                color: $Color-4;
+                margin-bottom: .5em;
+
+                .active {
+                    color: $Color-5;
+                }
+            }
+
+            &_price {
+                color: $Color-6;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            &_description {
+                color: $Color-3;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                margin-top: 22px;
+            }
+        }
+
+    }
+
+}
