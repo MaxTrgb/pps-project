@@ -1,11 +1,6 @@
-$mainColor: #C1DCDC;
-$colorTwo: #1E1E1E;
-$colorThree: #1E1E1EBF;
-$colorFour: #1E1E1E80;
-
 .main {
   &__hero {
-    background-color: $mainColor;
+    background-color: $Color-1;
     height: 512px;
     border-radius: 24px;
     padding-left: 48px;
@@ -14,7 +9,7 @@ $colorFour: #1E1E1E80;
     &__content {
       h1 {
         width: 512px;
-        color: #000;
+        color: $Color-2;
         font-family: Poppins;
         font-size: 64px;
         font-weight: 800;
@@ -23,14 +18,14 @@ $colorFour: #1E1E1E80;
       }
 
       h3 {
-        color: var(--Color-2, #1E1E1E);
+        color:$Color-2;
         font-family: Poppins;
         font-size: 32px;
         font-weight: 500;
       }
 
       h4 {
-        color: var(--Color-2, #1E1E1E);
+        color: $Color-2;
         font-family: Poppins;
         font-size: 18px;
         font-weight: 500;
@@ -38,8 +33,8 @@ $colorFour: #1E1E1E80;
     }
 
     .btn {
-      background-color: $mainColor;
-      border-color: $mainColor;
+      background-color:$Color-1;
+      border-color:$Color-1;
       border-radius: 12px;
       width: 48px;
       height: 48px;
@@ -49,26 +44,30 @@ $colorFour: #1E1E1E80;
     }
 
     ::placeholder {
-      color: $colorFour;
+      color: $Color-4;
       font-family: Poppins;
       font-size: 18px;
       font-weight: 500;
     }
   }
-
+  &__chosen{
+    width: 100%;
+    height: 200px;
+    background-color: $Color-1;
+  }  
   &__categories {
     &__title {
       padding-bottom: 28px;
 
       h2 {
-        color: $colorTwo;
+        color: $Color-2;
         font-family: Poppins;
         font-size: 32px;
         font-weight: 700;
       }
 
       p {
-        color: $colorFour;
+        color: $Color-4;
         font-family: Poppins;
         font-size: 18px;
         font-weight: 500;
@@ -80,7 +79,7 @@ $colorFour: #1E1E1E80;
       padding-bottom: 48px;
 
       p {
-        color: var(--Color-2, rgba(30, 30, 30, 0.50));
+        color: $Color-2;
         text-align: center;
         font-family: Poppins;
         font-size: 18px;
@@ -92,8 +91,6 @@ $colorFour: #1E1E1E80;
 
     &__slider {
       @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-      @import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
-
       button {
         border: none;
         cursor: pointer;
@@ -276,117 +273,7 @@ $colorFour: #1E1E1E80;
       }
 
     }
-
-    &__feedback {
-      @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
-
-      h2 {
-        padding-top: 48px;
-        padding-bottom: 28px;
-        color: #000;
-        font-family: Poppins;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-
-      }
-
-      .col-center {
-        margin: 0 auto;
-        float: none !important;
-      }
-
-      .carousel {
-
-        margin: 50px auto;
-        padding: 0 70px;
-
-      }
-
-      .carousel .item {
-        color: $colorTwo;
-        font-size: 14px;
-        text-align: center;
-        overflow: hidden;
-        min-height: 290px;
-        background-color: $mainColor;
-        border-radius: 24px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-family: Poppins;
-      }
-
-      .carousel .item .img-box {
-        width: 135px;
-        height: 135px;
-        margin: 0 auto;
-        padding: 5px;
-        border: 1px solid #ddd;
-        border-radius: 50%;
-      }
-
-      .carousel .img-box img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        border-radius: 50%;
-      }
-
-      .carousel .testimonial {
-        padding: 30px 0 10px;
-      }
-
-      .carousel .overview {
-        font-style: italic;
-      }
-
-      .carousel .overview b {
-        text-transform: uppercase;
-        color: #7AA641;
-      }
-
-      .carousel .carousel-control {
-        width: 40px;
-        height: 40px;
-        margin-top: -20px;
-        top: 50%;
-        background: none;
-      }
-
-      .carousel-control i {
-        font-size: 68px;
-        line-height: 42px;
-        position: absolute;
-        display: inline-block;
-        color: rgba(0, 0, 0, 0.8);
-        text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-      }
-
-      .carousel .carousel-indicators {
-        bottom: -40px;
-      }
-
-      .carousel-indicators li,
-      .carousel-indicators li.active {
-        width: 10px;
-        height: 10px;
-        margin: 1px 3px;
-        border-radius: 50%;
-      }
-
-      .carousel-indicators li {
-        background: #999;
-        border-color: transparent;
-        box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
-      }
-
-      .carousel-indicators li.active {
-        background: #555;
-        box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
-      }
-
-    }
+    
   }
 }
 

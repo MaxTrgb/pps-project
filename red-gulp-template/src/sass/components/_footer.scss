@@ -1,12 +1,7 @@
-$mainColor: #C1DCDC;
-$colorTwo: #1E1E1E;
-$colorThree: #1E1E1EBF;
-$colorFour: #1E1E1E80;
-
 .footer {
     width: 100%;
     height: 400px;
-    background-color: $mainColor;
+    background-color: $Color-1;
 
     &__general {
         h2 {
@@ -22,7 +17,7 @@ $colorFour: #1E1E1E80;
 
         h3 {
             width: 189px;
-            color: $colorFour;
+            color: $Color-4;
             font-family: Poppins;
             font-size: 18px;
             font-style: normal;
@@ -33,19 +28,17 @@ $colorFour: #1E1E1E80;
 
         &__social {
             gap: 24px;
-
             a {
                 img {
                     width: 48px;
                     height: 48px;
                 }
-
             }
         }
 
         &__bottom {
             p {
-                color: $colorFour;
+                color: $Color-4;
                 font-family: Poppins;
                 font-size: 18px;
                 font-style: normal;
@@ -62,7 +55,7 @@ $colorFour: #1E1E1E80;
             gap: 24px;
         }
         h4 {
-            color: var(--Color-2, #1E1E1E);
+            color:$Color-2;
             font-family: Poppins;
             font-size: 18px;
             font-style: normal;
@@ -71,7 +64,7 @@ $colorFour: #1E1E1E80;
         }
 
         a {
-            color: var(--Color-4, rgba(30, 30, 30, 0.50));
+            color: $Color-4;
             font-family: Poppins;
             font-size: 18px;
             font-style: normal;
