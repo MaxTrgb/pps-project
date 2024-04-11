@@ -1,6 +1,6 @@
 .main {
   &__hero {
-    background-color: $Color-1;
+    background-color: $MainColor;
     height: 512px;
     border-radius: 24px;
     padding-left: 48px;
@@ -33,8 +33,8 @@
     }
 
     .btn {
-      background-color:$Color-1;
-      border-color:$Color-1;
+      background-color:$MainColor;
+      border-color:$MainColor;
       border-radius: 12px;
       width: 48px;
       height: 48px;
@@ -53,7 +53,7 @@
   &__chosen{
     width: 100%;
     height: 200px;
-    background-color: $Color-1;
+    background-color: $MainColor;
   }  
   &__categories {
     &__title {
@@ -134,7 +134,7 @@
       }
 
       .label-container button {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: $Color-4;
         border-radius: 20px;
         color: #111;
         cursor: pointer;
@@ -144,7 +144,7 @@
       }
 
       .label-container button:disabled {
-        background-color: whitesmoke;
+        background-color: black;
         cursor: not-allowed;
         border: none;
       }
