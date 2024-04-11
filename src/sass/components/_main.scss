@@ -1,4 +1,6 @@
 .main {
+  padding-bottom: 150px;
+
   &__hero {
     background-color: $MainColor;
     height: 512px;
@@ -18,7 +20,7 @@
       }
 
       h3 {
-        color:$Color-2;
+        color: $Color-2;
         font-family: Poppins;
         font-size: 32px;
         font-weight: 500;
@@ -33,8 +35,8 @@
     }
 
     .btn {
-      background-color:$MainColor;
-      border-color:$MainColor;
+      background-color: $MainColor;
+      border-color: $MainColor;
       border-radius: 12px;
       width: 48px;
       height: 48px;
@@ -50,12 +52,95 @@
       font-weight: 500;
     }
   }
-  &__chosen{
+
+  &__chosen {
     width: 100%;
-    height: 200px;
+    margin-bottom: 150px;
+    
+    h1 {
+      color: $Color-2;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    p {
+      color: $Color-4;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .product__content_info_price{
+      color: $Color-6;
+    }
+  }
+
+  &__content {
+    display: flex;
+    margin-top: 48px;
     background-color: $MainColor;
-  }  
+    border-radius: 24px;
+    padding: 28px;
+
+    >img {
+      max-width: 358px;
+      min-width: 358px;
+      max-height: 358px;
+      min-height: 358px;
+    }
+
+    &_info {
+      margin-left: 48px;
+
+      >h1 {
+        color: $Color-2;
+
+        margin-top: 10px;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+      }
+
+      &_stars {
+        font-size: 20px;
+        color: $Color-4;
+        margin-bottom: .5em;
+
+        .active {
+          color: $Color-5;
+        }
+      }
+
+      &_price {
+        color: $Color-6;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+      }
+
+      &_description {
+        color: $Color-3;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        margin-top: 22px;
+      }
+    }
+
+
+  }
+
   &__categories {
+    margin-bottom: 150px;
+
     &__title {
       padding-bottom: 28px;
 
@@ -76,10 +161,10 @@
 
     &__about {
       padding-top: 28px;
-      padding-bottom: 48px;
+      margin-bottom: 100px;
 
       p {
-        color: $Color-2;
+        color: $Color-4;
         text-align: center;
         font-family: Poppins;
         font-size: 18px;
@@ -87,10 +172,12 @@
         font-weight: 500;
         line-height: normal;
       }
+
     }
 
     &__slider {
       @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
       button {
         border: none;
         cursor: pointer;
@@ -273,7 +360,7 @@
       }
 
     }
-    
+
   }
 }
 
