@@ -29,6 +29,7 @@
         &__social {
             gap: 24px;
             a {
+                
                 img {
                     width: 48px;
                     height: 48px;
@@ -51,6 +52,7 @@
     &__additional {
         gap: 48px;
         padding-top: 48px;
+        
         &__links{
             gap: 24px;
         }
@@ -64,6 +66,7 @@
         }
 
         a {
+            text-decoration: none;
             color: $Color-4;
             font-family: Poppins;
             font-size: 18px;
