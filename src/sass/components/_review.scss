@@ -1,5 +1,4 @@
 .review {
-
     margin-top: 48px;
 
     h1 {
@@ -90,14 +89,18 @@
         }
 
         &_submit {
-            // color: $Color-1;
+            color: $Color-3;
             font-family: Poppins;
             font-size: 18px;
             font-style: normal;
             width: 150px;
-            background-color: $Color-1;
+            background-color: $MainColor;
             border-radius: 24px;
             margin-bottom: 30px;
+
+            &:hover {
+                color: $Color-2;
+            }
         }
     }
 }
