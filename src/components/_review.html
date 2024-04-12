@@ -22,16 +22,23 @@
                 </div>
                 
                 <form class="review__form">
-                    <div class="form-group">
+                    <div class="review__form_name">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name">
                     </div>
-                    
-                    <div class="form-group">
+                    <div class="review__form_rating">
+                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Amazing ! - 5 stars"></label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Really good - 4 stars"></label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Ok - 3 stars"></label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Bad - 2 stars"></label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Uglye - 1 star"></label>
+                    </div>
+                    <div class="review__form_review">
                         <label for="review">Review</label>
                         <textarea class="form-control" id="review" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+                    <input type="submit" class="review__form_submit" value="Submit">
                 </form>
             </div>
         </div>
