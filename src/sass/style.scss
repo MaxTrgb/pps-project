@@ -11,6 +11,7 @@
 @import 'components/_footer';
 @import 'pages/_main';
 @import 'components/_review';
+@import 'components/_login_register';
 // import dynamic components
 
 // import pages
@@ -18,5 +19,6 @@
 @import 'pages/_page-product.scss';
 @import 'pages/_page-products_grid.scss';
 @import 'pages/_main.scss';
+@import 'pages/_login_register.scss';
 
 @import 'base/global';
