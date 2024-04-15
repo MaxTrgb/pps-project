@@ -9,7 +9,7 @@
 // import static components
 @import 'components/_header';
 @import 'components/_footer';
-@import 'components/_main';
+@import 'pages/_main';
 @import 'components/_review';
 // import dynamic components
 
@@ -17,5 +17,6 @@
 @import 'pages/_page-about.scss';
 @import 'pages/_page-product.scss';
 @import 'pages/_page-products_grid.scss';
+@import 'pages/_main.scss';
 
 @import 'base/global';

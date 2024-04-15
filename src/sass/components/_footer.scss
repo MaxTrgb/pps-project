@@ -4,6 +4,18 @@
     background-color: $MainColor;
 
     &__general {
+        #phone-number {
+            color: $Color-2;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-decoration: none;
+        }
+        #footer-info{
+            margin-bottom: 28px;
+        }
         h2 {
             padding-top: 48px;
             margin-bottom: 0;
@@ -28,8 +40,9 @@
 
         &__social {
             gap: 24px;
+
             a {
-                
+
                 img {
                     width: 48px;
                     height: 48px;
@@ -52,12 +65,13 @@
     &__additional {
         gap: 48px;
         padding-top: 48px;
-        
-        &__links{
+
+        &__links {
             gap: 24px;
         }
+
         h4 {
-            color:$Color-2;
+            color: $Color-2;
             font-family: Poppins;
             font-size: 18px;
             font-style: normal;
