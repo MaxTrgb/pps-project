@@ -4,16 +4,31 @@
 .product {
 
     nav {
+        background-color: $MainColor;
+        border-radius: 24px;
+        ol{
+            padding: 8px;
+            margin-left: 16px;
 
-        li {
-            // color: $Color-3;
-            font-family: Poppins;
-            a{
-                text-decoration: none;
+            li {
                 font-family: Poppins;
-                color: $Color-3;
-                &:hover{
+                a {
+                    text-decoration: none;
+                    font-family: Poppins;
+                    color: $Color-3;
+    
+                    &:hover {
+                        color: $Color-2;
+                    }
+                }
+                samp{
+                    font-family: Poppins;
                     color: $Color-2;
+
+                }
+                
+                &:not(:first-of-type)::before {
+                    color: $Color-3;
                 }
             }
         }
