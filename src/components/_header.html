@@ -15,11 +15,24 @@
                 <div class="header__icons align-items-center">
                     <nav>
                         <ul class="d-flex align-items-center">
-                            <li><a href="#">
-                                    <i class="bi bi-cart" style="font-size: 2rem; color: white;"></i>
+                            <li>
+                                <a id="cart-toggle">
+                                    <i class="bi bi-cart my-cart-icon" style="font-size: 2rem; color: white;"></i>
                                     <span id="cart-counter" class="badge bg-secondary">0</span>
                                 </a>
+                                <div id="cart" class="cart-container">
+                                    <!-- Cart items will be displayed here -->
+                                </div>                               
+                                <button id="cart-close-btn" class="btn-close"></button>
+                                <div id="cart-summary">
+                                    <div class="d-flex align-items-center" style="gap: 24rem;">
+                                        <p id="cart-total">Total: 0 ₴</p>
+                                        <button id="buy-button">Buy</button>
+                                    </div>
+                                   
+                                </div>
                             </li>
+                                                                         
                             <li><a href="/../pages/_login_register.html">
                                     <i class="bi bi-person-fill"  style="font-size: 2rem; color: white;"></i>
                                 </a>
