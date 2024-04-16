@@ -35,17 +35,21 @@ function displayProducts(products) {
         productItem.className = 'col-lg-3 col-md-4 col-sm-6 mb-4';
         
         let imageUrl = `data:${e.images[0].fileType};base64,${e.images[0].fileData}`;
-
+        let price = formatPrice(e.price);
         productItem.innerHTML = `
             <div class="card">
                 <img src="${imageUrl}" class="card-img-top" alt="${e.name}">
                 <div class="card-body">
                     <h5 class="card-title">${e.name}</h5>
-                    <p class="card-text">${e.price} ₴</p>
+                    <p class="card-text">${price}</p>
                     <a href="/../pages/product.html?id=${e.id}" class="btn btn-primary">Details</a>
                 </div>
             </div>
         `;
         grid.appendChild(productItem);
     });
+}
+
+function formatPrice(price) {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + ' ₴';
 }

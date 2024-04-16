@@ -1,24 +1,14 @@
 <section class="review">
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12">
                 <h1>Reviews</h1>
-                <div class="review__card">
-                    <p class="review__card_reviewer">
-                        Name
-                    </p>
-                    <div class="review__card_rating">
-                        <span><i class="active icon-star"></i></span>
-                        <span><i class="active icon-star"></i></span>
-                        <span><i class="active icon-star"></i></span>
-                        <span><i class="active icon-star"></i></span>
-                        <span><i class="icon-star"></i></span>
+                <div id="reviewList">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border text-secondary spinner-border-lg"  style="width: 15rem; height: 15rem;" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                     </div>
-                    <p class="review__card_description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                        natus rem esse. Autem, molestiae, vel minima excepturi voluptate eaque, libero perferendis qui
-                        accusantium dicta neque totam dolore ipsam repellat quae?
-                    </p>
                 </div>
                 
                 <form class="review__form">
@@ -35,7 +25,7 @@
                     </div>
                     <div class="review__form_review">
                         <label for="review">Review</label>
-                        <textarea class="form-control" id="review" rows="3"></textarea>
+                        <textarea class="form-control" id="review" rows="2"></textarea>
                     </div>
                     <input type="submit" class="review__form_submit" value="Submit">
                 </form>
@@ -43,3 +33,4 @@
         </div>
     </div>
 </section>
+<script src="/../js/review.js"></script>

@@ -31,7 +31,16 @@
           <!-- grid -->
           <div class="products__grid">
             <div class="row" id="productsGrid">
-              
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                  <img src="${imageUrl}" class="card-img-top" alt="${e.name}">
+                  <div class="card-body">
+                      <h5 class="card-title">${e.name}</h5>
+                      <p class="card-text">${price}</p>
+                      <a href="/../pages/product.html?id=${e.id}" class="btn btn-primary">Details</a>
+                  </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
