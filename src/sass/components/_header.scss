@@ -61,36 +61,37 @@
         .my-cart-icon:hover{
             cursor: pointer;
         }
-       
+        #cart-summary {                
+            position: absolute;
+            top: 30px;
+            left: 117.1rem;
+            display: none;
+            background-color: $MainColor;
+            padding: 10px;
+            color: $Color-3;
+            z-index: 999;
+            
+        }
+        
+        #cart-total {
+            margin-bottom: 5px;
+        }
+        
+        #buy-button {
+            background-color: $Color-3;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        #buy-button:hover {
+            background-color:$Color-2;
+        }
+        
         ul {
-            #cart-summary {                
-                position: absolute;
-                top: 30px;
-                left: 117.1rem;
-                display: none;
-                background-color: $MainColor;
-                padding: 10px;
-                color: $Color-3;
-                z-index: 999;
-                
-            }
-            
-            #cart-total {
-                margin-bottom: 5px;
-            }
-            
-            #buy-button {
-                background-color: $Color-3;
-                color: black;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-                border-radius: 5px;
-            }
-            
-            #buy-button:hover {
-                background-color:$Color-2;
-            }
+           
             
             list-style: none;
             gap: 48px;
