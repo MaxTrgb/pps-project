@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (category) {
         loadCategory(category);
     } else {
+        loadCategory('All');
         console.error('category not found');
     }
 });
@@ -36,12 +37,27 @@ function displayProducts(products) {
         
         let imageUrl = `data:${e.images[0].fileType};base64,${e.images[0].fileData}`;
         let price = formatPrice(e.price);
+        let starsHtml = '';
+        for (let i = 0; i < 5; i++) {
+            if (i < e.rating) {
+                starsHtml += '<span><i class="active icon-star"></i></span> ';
+            } else {
+                starsHtml += '<span><i class="icon-star"></i></span> ';
+            }
+        }
         productItem.innerHTML = `
             <div class="card">
                 <img src="${imageUrl}" class="card-img-top" alt="${e.name}">
                 <div class="card-body">
-                    <h5 class="card-title">${e.name}</h5>
-                    <p class="card-text">${price}</p>
+                    <h5 class="card-title">
+                        ${e.name}
+                    </h5>
+                    <div class="stars">
+                        ${starsHtml}
+                    </div>
+                    <p class="card-text">
+                        ${price}
+                    </p>
                     <a href="/../pages/product.html?id=${e.id}" class="btn btn-primary">Details</a>
                 </div>
             </div>

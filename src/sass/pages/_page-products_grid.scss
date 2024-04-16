@@ -66,6 +66,15 @@
                 font-size: 18px;
                 border-color: $Color-6;
             }
+            .stars {
+                font-size: 20px;
+                color: $Color-4;
+                margin-bottom: .5em;
+    
+                .active {
+                    color: $Color-5;
+                }
+            }
         }
     }
 }
