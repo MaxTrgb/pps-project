@@ -87,6 +87,19 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-        }
+        }       
     }
+    @media (max-width: 768px )  {
+        .footer__additional {
+            gap: 18px;
+            padding-left: 18px;
+        }
+      }
+      @media (max-width: 576px  )  {
+        .footer__additional {
+            gap: 5px;
+            padding-left: 5px;
+        }
+      }
+      
 }
