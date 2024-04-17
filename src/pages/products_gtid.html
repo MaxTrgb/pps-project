@@ -22,7 +22,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <nav aria-label="breadcrumb">
+          <nav aria-label="breadcrumb" id="breadcrumbNav">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
               <li class="breadcrumb-item"><samp id="categoryTitle">Categoryname</samp></li>
@@ -31,9 +31,28 @@
           <!-- grid -->
           <div class="products__grid">
             <div class="row" id="productsGrid">
-
+              <div class="d-flex justify-content-center align-items-center margin-auto">
+                <div class="spinner-border text-secondary spinner-border-lg m-5" style="width: 15rem; height: 15rem;"
+                  role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
             </div>
           </div>
+
+        </div>
+        <div class="col-2 offset-5">
+          <!-- pagination -->
+          <nav aria-label="navigation" id="paginationNav">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="../../pages/products_gtid.html" id="categoryTitle">
+                  <div class="spinner-border text-secondary spinner-border-sm" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </a>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>

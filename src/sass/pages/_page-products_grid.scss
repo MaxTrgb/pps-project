@@ -1,15 +1,15 @@
 .products {
     margin-bottom: 48px;
-    nav {
+    #breadcrumbNav {
         background-color: $MainColor;
         border-radius: 24px;
-        ol{
+        >ol{
             padding: 8px;
             margin-left: 16px;
 
-            li {
+            >li {
                 font-family: Poppins;
-                a {
+                >a {
                     text-decoration: none;
                     font-family: Poppins;
                     color: $Color-3;
@@ -18,7 +18,7 @@
                         color: $Color-2;
                     }
                 }
-                samp{
+                >samp{
                     font-family: Poppins;
                     color: $Color-2;
 
@@ -75,6 +75,24 @@
                     color: $Color-5;
                 }
             }
+        }
+    }
+    #paginationNav {
+        ul {
+            justify-content: center;
+        }
+        .page-link {
+            color: $Color-2;
+            background-color: $MainColor;
+            border-color: $MainColor;
+        }
+        .page-item.active .page-link {
+            background-color: $Color-4;
+            border-color: $Color-4;
+        }
+        .page-link:hover {
+            background-color: $Color-4;
+            border-color: $Color-4;
         }
     }
 }
