@@ -71,7 +71,6 @@ function addToCart(productName, price) {
   displayCart();
 }
 
-// Function to display the items in the cart
 function displayCart() {
   var cartContainer = document.getElementById('cart');
   cartContainer.innerHTML = ''; // Clear previous content
@@ -79,24 +78,39 @@ function displayCart() {
   // Get the cart items from local storage
   var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
+  var totalPrice = 0; // Initialize total price variable
+
   // Loop through each item and display it in the cart
   cartItems.forEach(function(item) {
       var itemElement = document.createElement('div');
       itemElement.textContent = item.name + ' - ' + item.price;
       cartContainer.appendChild(itemElement);
+
+      // Increment total price with the price of the current item
+      totalPrice += parseFloat(item.price);
   });
+
+  // Create a div element to display the total price
+  var totalPriceElement = document.createElement('div');
+  totalPriceElement.textContent = 'Total Price: $' + totalPrice.toFixed(2); // Format the total price to two decimal places
+  totalPriceElement.classList.add('total-price'); // Add a class to the total price element
+  cartContainer.appendChild(totalPriceElement);
 }
 
-// Function to toggle the visibility of the cart section
 function toggleCart() {
+  console.log("Toggle cart function called"); // Check if this line is printed in the console
   var cartSection = document.getElementById('cart');
+  var cartSummary = document.querySelector('.cart_summary'); // Selecting the cart summary element
   var btnClose = document.getElementById('cart-close-btn');
   if (cartSection.style.display === 'none') {
       cartSection.style.display = 'block';
+      cartSummary.style.display = 'block'; // Show the cart summary when cart is displayed
       btnClose.style.display = 'block'; // Show the close button when cart is displayed
-      displayCart(); // Display the items in the cart when it's shown
+      // Display the items in the cart when it's shown
+      displayCart(); 
   } else {
       cartSection.style.display = 'none';
+      cartSummary.style.display = 'none'; // Hide the cart summary when cart is hidden
       btnClose.style.display = 'none'; // Hide the close button when cart is hidden
   }
 }
@@ -120,7 +134,7 @@ addToCartButtons.forEach(function(button) {
 // Function to close the cart section and cart summary
 function closeCart() {
   var cartSection = document.getElementById('cart');
-  var cartSummary = document.getElementById('cart-summary');
+  var cartSummary = document.querySelector('.cart_summary'); // Selecting the cart summary element
   var btnClose = document.getElementById('cart-close-btn');
   cartSection.style.display = 'none';
   cartSummary.style.display = 'none'; // Hide the cart summary
@@ -130,34 +144,5 @@ function closeCart() {
 document.getElementById('cart-close-btn').addEventListener('click', closeCart);
 
 
-// Function to toggle the visibility of the cart summary
-function toggleCartSummary() {
-  var cartSummary = document.getElementById('cart-summary');
-  if (cartSummary.style.display === 'none') {
-      cartSummary.style.display = 'block';
-  } else {
-      cartSummary.style.display = 'none';
-  }
-}
-
-// Function to update the total price of products in the cart
-function updateCartTotal() {
-  var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-  var totalPrice = 0;
-  cartItems.forEach(function(item) {
-      totalPrice += parseFloat(item.price);
-  });
-  document.getElementById('cart-total').textContent = 'Total: ' + totalPrice.toFixed(2) + ' ₴';
-}
-
-// Call updateCartTotal function to initialize the total price
-updateCartTotal();
-
-// Add event listener to the "Buy" button
-document.getElementById('buy-button').addEventListener('click', function() {
-  // Here you can implement the logic for the "Buy" button, such as processing the purchase
-  alert('Thank you for your purchase!');
-});
-
-// Add event listener to the cart icon to toggle the visibility of the cart summary
-document.getElementById('cart-toggle').addEventListener('click', toggleCartSummary);
+// Add event listener to the cart icon to toggle the visibility of the cart section
+document.getElementById('cart-toggle').addEventListener('click', toggleCart);

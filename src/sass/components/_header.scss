@@ -44,7 +44,12 @@
             display: none;            
             z-index: 998;
             color:$Color-3;  
-                      
+            .total-price {
+                font-weight: bold;
+                color:$Color-2;
+                /* Add any other styles you want */
+              }
+              
         }
         .btn-close {
             position: absolute;
@@ -61,33 +66,19 @@
         .my-cart-icon:hover{
             cursor: pointer;
         }
-        #cart-summary {                
+        .cart_summary{            
+            color: #fff;
             position: absolute;
-            top: 30px;
-            left: 117.1rem;
-            display: none;
+            top: 43px;
+            right:80px;            
             background-color: $MainColor;
             padding: 10px;
-            color: $Color-3;
-            z-index: 999;
+            border-radius: 10px;
+            display: none;
+            a{
+                color: $Color-2;
             
-        }
-        
-        #cart-total {
-            margin-bottom: 5px;
-        }
-        
-        #buy-button {
-            background-color: $Color-3;
-            color: black;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        
-        #buy-button:hover {
-            background-color:$Color-2;
+            }
         }
         
         ul {
