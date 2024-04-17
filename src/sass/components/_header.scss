@@ -42,6 +42,14 @@
             display: none;
         }
     }
+    @media (max-width: 414px) {
+     
+        .header__menu{
+            p{
+                display: none;
+            }
+        }
+    }
     &__icons {
         
         .cart-container {
