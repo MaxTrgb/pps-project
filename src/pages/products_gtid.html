@@ -22,106 +22,44 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <nav aria-label="breadcrumb">
+          <nav aria-label="breadcrumb" id="breadcrumbNav">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-              <li class="breadcrumb-item"><samp>Categoryname</samp></li>
+              <li class="breadcrumb-item"><samp id="categoryTitle">Categoryname</samp></li>
             </ol>
           </nav>
           <!-- grid -->
           <div class="products__grid">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>  
+            <div class="row" id="productsGrid">
+              <div class="d-flex justify-content-center align-items-center margin-auto">
+                <div class="spinner-border text-secondary spinner-border-lg m-5" style="width: 15rem; height: 15rem;"
+                  role="status">
+                  <span class="visually-hidden">Loading...</span>
                 </div>
               </div>
-
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card">
-                  <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" class="card-img-top" alt="product">
-                  <div class="card-body">
-                    <h5 class="card-title">SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4</h5>
-                    <p class="card-text">3 727 ₴</p>
-                    <a href="/../pages/product.html" class="btn btn-primary">Details</a>
-                  </div>
-                </div>
-              </div>
-
-
             </div>
           </div>
+
+        </div>
+        <div class="col-2 offset-5">
+          <!-- pagination -->
+          <nav aria-label="navigation" id="paginationNav">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="../../pages/products_gtid.html" id="categoryTitle">
+                  <div class="spinner-border text-secondary spinner-border-sm" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </a>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
   </main>
-  @@include("../components/_footer.html")  
+  @@include("../components/_footer.html")
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/../js/productsGrid.js"></script>
   <script src="/../js/script.js"></script>
 </body>

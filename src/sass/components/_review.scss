@@ -1,5 +1,5 @@
 .review {
-    margin-top: 48px;
+    margin-top: 58px;
 
     h1 {
         text-align: center;
@@ -8,6 +8,7 @@
         font-style: normal;
         font-weight: 700;
         color: $Color-2;
+        margin-bottom: 28px;
     }
 
     &__card {
@@ -19,7 +20,7 @@
 
         &_reviewer {
             font-family: Poppins;
-            font-size: 24px;
+            font-size: 26px;
             font-style: normal;
             font-weight: 600;
             color: $Color-2;
@@ -36,7 +37,7 @@
         }
 
         &_description {
-            font-size: 16px;
+            font-size: 20px;
             font-family: Poppins;
             font-style: normal;
             font-weight: 500;
@@ -56,16 +57,36 @@
             font-style: normal;
             font-weight: 500;
             color: $Color-2;
+            input {
+                &:focus {
+                    outline: none;
+                    background-color: $MainColor;
+                    color: $Color-2;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+
+                outline: none;
+                background-color: $MainColor;
+                color: $Color-2;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+            }
         }
 
         &_rating {
             width: 218px;
+
             >input {
                 display: none;
             }
 
             >label {
-                color: #ddd;
+                color: #5e515f;
                 float: right;
 
                 &:before {
@@ -86,6 +107,26 @@
             font-weight: 500;
             color: $Color-2;
             margin-bottom: 20px;
+
+            textarea {
+                &:focus {
+                    outline: none;
+                    background-color: $MainColor;
+                    color: $Color-3;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+
+                outline: none;
+                background-color: $MainColor;
+                color: $Color-3;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+            }
         }
 
         &_submit {

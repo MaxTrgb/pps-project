@@ -25,37 +25,35 @@
                 <div class="col-12">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a href="../../pages/products_gtid.html">Category</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><samp>SSD 1TB Samsung 980 M.2 2280
-                                    PCIe 3.0 x4 NVMe V-NAND MLC (MZ-V8V1T0BW)</samp></li>
+                            <li class="breadcrumb-item">
+                                <a href="../../index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="../../pages/products_gtid.html" id="categoryTitle">
+                                    <div class="spinner-border text-secondary spinner-border-sm" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <samp id="productTitle">
+                                    <div class="spinner-border text-secondary spinner-border-sm" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </samp>
+                            </li>
                         </ol>
                     </nav>
-                    <section class="product__content">
-                        <img src="/../img/5-358x358.png.pagespeed.ce.ZK7u1zrmpv.png" alt="product">
-                        <div class="product__content_info">
-                            <h1>
-                                SSD 1TB Samsung 980 M.2 2280 PCIe 3.0 x4 NVMe V-NAND MLC (MZ-V8V1T0BW)
-                            </h1>
-                            <div class="product__content_info_stars">
-                                <span><i class="active icon-star"></i></span>
-                                <span><i class="active icon-star"></i></span>
-                                <span><i class="active icon-star"></i></span>
-                                <span><i class="active icon-star"></i></span>
-                                <span><i class="icon-star"></i></span>
+                    <section class="product__content" id="productContent">
+
+                        <div class="d-flex justify-content-center align-items-center margin-auto">
+                            <div class="spinner-border text-secondary spinner-border-lg m-5"  style="width: 15rem; height: 15rem;" role="status">
+                                <span class="visually-hidden">Loading...</span>
                             </div>
-                            <p class="product__content_info_price">
-                                3 727 ₴
-                            </p>
-                            <button type="button" class="btn btn-outline-secondary">Add to cart</button>
-                            <p class="product__content_info_description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dolores! Rerum
-                                assumenda
-                                magni accusamus expedita obcaecati, asperiores voluptate facilis. Ipsam accusantium hic
-                                iste
-                                aliquid porro officia obcaecati facere necessitatibus quidem.
-                            </p>
                         </div>
+
                     </section>
                     @@include("../components/_review.html")
                 </div>
@@ -65,5 +63,6 @@
     @@include("../components/_footer.html")
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/../js/product.js"></script>
     <script src="/../js/script.js"></script>
 </body>
