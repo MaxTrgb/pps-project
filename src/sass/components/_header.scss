@@ -1,14 +1,14 @@
-.header {  
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
     background-color: black;
-    
+
     &__menu {
         p {
-            color:$Color-2;
+            color: $Color-2;
             font-family: Quella;
             font-size: 24px;
             font-style: normal;
@@ -20,9 +20,10 @@
         ul {
             list-style: none;
             gap: 48px;
+
             a {
                 text-decoration: none;
-                color:$Color-3;
+                color: $Color-3;
                 font-family: Poppins;
                 font-size: 18px;
                 font-style: normal;
@@ -33,12 +34,63 @@
     }
 
     &__icons {
+        
+        .cart-container {
+            position: absolute;           
+            top: 100px;
+            right: 0;            
+            background-color: $MainColor; 
+            padding: 10px;
+            display: none;            
+            z-index: 998;
+            color:$Color-3;  
+            .total-price {
+                font-weight: bold;
+                color:$Color-2;
+                /* Add any other styles you want */
+              }
+              
+        }
+        .btn-close {
+            position: absolute;
+            top: 40px;
+            right: 20px;
+            background-color: $Color-3;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 999;
+            display: none;
+        }
+        .my-cart-icon:hover{
+            cursor: pointer;
+        }
+        .cart_summary{            
+            color: #fff;
+            position: absolute;
+            top: 43px;
+            right:80px;            
+            background-color: $MainColor;
+            padding: 10px;
+            border-radius: 10px;
+            display: none;
+            a{
+                color: $Color-2;
+            
+            }
+        }
+        
         ul {
+           
+            
             list-style: none;
             gap: 48px;
+
             a {
                 text-decoration: none;
             }
+
             #burger-menu {
                 cursor: pointer;
                 height: 27px;
@@ -47,7 +99,7 @@
                 overflow: visible;
                 position: relative;
                 z-index: 2;
-            
+
                 // THE LINES
                 span,
                 span:before,
@@ -59,49 +111,50 @@
                     position: absolute;
                     transition: 0.3s ease-in-out;
                 }
-            
+
                 span:before,
                 span:after {
                     content: '';
                 }
-            
+
                 // TOP
                 span:before {
                     left: 0px;
                     top: -10px;
                     width: 27px;
                 }
-            
+
                 // MIDDLE
                 span {
                     right: 0px;
                     top: 13px;
                     width: 27px;
                 }
-            
+
                 // BOTTOM
                 span:after {
                     left: 0px;
                     top: 10px;
                     width: 27px;
                 }
-            
+
                 // ROTATION ON CLICK
                 &.close {
+
                     // TOP
                     span:before {
                         top: 0px;
                         transform: rotate(90deg);
                         width: 27px;
                     }
-            
+
                     // MIDDLE
                     span {
                         transform: rotate(-45deg);
                         top: 13px;
                         width: 27px;
                     }
-            
+
                     // BOTTOM
                     span:after {
                         top: 0px;
@@ -112,7 +165,7 @@
                     }
                 }
             }
-            
+
             #menu {
                 z-index: 1;
                 min-width: 100%;
@@ -125,23 +178,23 @@
                 text-align: start;
                 padding-top: 20px;
                 transition: all 0.3s ease-in-out;
-            
+
                 &.overlay {
                     visibility: visible;
                     opacity: 1;
                     padding-top: 100px;
-                    background:$MainColor;
-                    
+                    background: $MainColor;
+
                 }
-            
+
                 ul {
                     padding: 0;
                 }
-            
+
                 li {
                     list-style: none;
                 }
-            
+
                 a {
                     color: $Color-3;
                     display: block;
@@ -152,7 +205,7 @@
                     text-decoration: none;
                 }
             }
-            
+
         }
     }
 }
