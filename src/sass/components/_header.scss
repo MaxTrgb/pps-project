@@ -35,8 +35,13 @@
                 }
             }
         }
+        
     }
-
+    @media (max-width: 991px) {
+        .header__menu nav {
+            display: none;
+        }
+    }
     &__icons {
         
         .cart-container {
