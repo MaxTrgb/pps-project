@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background-color: $MainColor;
-        
+
     &__general {
         #phone-number {
             color: $Color-2;
@@ -13,18 +13,21 @@
             line-height: normal;
             text-decoration: none;
         }
-        #footer-info{
+
+        #footer-info {
             margin-bottom: 28px;
-        }
-        h2 {
-            padding-top: 48px;
-            margin-bottom: 0;
-            color: $Color-2;
-            font-family: Quella;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+
+            >a {
+                padding-top: 48px;
+                margin-bottom: 0;
+                color: $Color-2;
+                font-family: Quella;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none;
+            }
         }
 
         h3 {
@@ -94,21 +97,24 @@
             }
         }
     }
-    @media (max-width: 768px )  {
+
+    @media (max-width: 768px) {
         .footer__additional {
             gap: 18px;
             padding-left: 18px;
         }
-      }
-      @media (max-width: 576px  )  {
+    }
+
+    @media (max-width: 576px) {
         .footer__additional {
-           display: flex;
-           flex-direction: column;
+            display: flex;
+            flex-direction: column;
         }
+
         .footer-addd {
             display: flex;
             flex-direction: column;
-         }
-      }
-      
+        }
+    }
+
 }
