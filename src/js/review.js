@@ -89,6 +89,7 @@ function handleSuccess(data) {
     alert('Review was sent');
     const reviewForm = document.querySelector('.review__form');
     reviewForm.reset();
+    window.location.reload();
 }
 
 function handleError(error) {
